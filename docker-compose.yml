@@ -31,7 +31,10 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - /data/pgadmin:/root/.pgadmin
+      - pgadmin:/root/.pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
     env_file:
       - .env
     links:
@@ -39,4 +42,6 @@ services:
 
 volumes:
   postgres:
+    driver: local
+  pgadmin:
     driver: local
