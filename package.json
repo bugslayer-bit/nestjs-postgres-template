@@ -69,7 +69,6 @@
     "mime-types": "^3.0.1",
     "morgan": "^1.10.0",
     "nestjs-cls": "^5.4.3",
-    "nestjs-i18n": "^10.5.1",
     "parse-duration": "^2.1.4",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
